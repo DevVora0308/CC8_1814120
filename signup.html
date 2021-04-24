@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SIGNUP FORM</title>
+<script src="signup.js"></script>
+<link rel="stylesheet" href="signup.css">
+
+
+
+</head>
+<body bgcolor="#166c4d">
+     <form method="post" action="football.html" name="login">
+	<h1 align="center">UEFA CHAMPIONS LEAGUE </h1>
+  <nav>
+  <ul>
+  <li><a href="https://www.uefa.com/uefachampionsleague/">UCL</a></li>
+  <li><a href="football.html" align="right">Home</a></li>
+  <li><a href="#">News</a></li>
+  <li><a href="#">Contact Us</a></li>
+  <li><a href="#">About</a></li>
+
+</ul>
+</nav>
+	<div class="login-box">
+		<center><br>
+    <img src="avatar.png" class="avatar" width="70" height="70">
+           <h1> Signup Page </h1><br>
+           <p>Already a User..!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="login.html"> Login</a></p>
+       
+       <fieldset style="width:800px"><legend><b>Personal Information</legend><br>
+       <label for="first_name"> FIRST NAME : </label>
+      
+       <input type="text" name="first_name"id="first_name" align="center" onchange="validate_fname()" placeholder="Enter a valid name" autofocus autocomplete="on">
+       <br>
+       <br>
+       <label for="last_name">LAST NAME : </label>
+       
+       <input type="text"name="last_name"id="last_name" onchange="validate_lname()"  placeholder="Enter a valid last name" autocomplete="on">
+       <br><br>
+        <label for="last_name"> EMAIL ID: </label>
+       <input type="email"name="emaili"id="emaili" onchange="validate_email()" placeholder="Enter a valid email id" autocomplete="on">
+       <br><br>
+       <label for="bday">DATE OF BIRTH : </label>
+       <input type="date" name="bday" id="bday" onchange="validate_DOB()" placeholder="DOB" autocomplete="on"><br><br>
+       <label for="username">USERNAME : </label>
+       <input type="text"name="username"id="username" onchange="validate_user()" placeholder="Username" autocomplete="on" required>
+       <br><br>
+       <label for="password">PASSWORD : </label>
+       <input type="password"name="password"id="password" onchange="validate_pass()" placeholder="8 characters" autocomplete="on	" required pattern="[A-Za-z0-9]{8}" title="Eight letter password ">
+       <br><br>
+       <label >FAVOURITE TEAM : 
+       <datalist id="dept">
+       <option value="PSG">PSG</option>
+	   <option value="LIVERPOOL">LIVERPOOL</option>
+	   <option value="REAL MADRID">REAL MADRID</option>
+	   <option value="MAN CITY">MAN CITY</option>
+	   <option value="ATHLETICO MADRID">ATHLETICO MADRID</option>
+	 </datalist>
+       <input type="text"name="" list="" placeholder="Select your favourite team" autocomplete="on">
+       </label> 
+       <br><br>
+       <label >GENDER : </label>
+       <label for="M">MALE : </label>
+       <input type="radio"name="gender"id="M" value="M"><br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="F">FEMALE : </label>
+       <input type="radio" name="gender" id="F" value="F"><br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="O">OTHER : </label>
+       <input type="radio"name="gender"id="O" value="O"><br><br>
+       <br>
+       <label >Leagues You Follow </label><br><br>
+      <input type="checkbox" name="1" value="first"> PL<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="2" value="second"> La Liga<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="3" value="third" >Bundesliga <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="4" value="fourth"> Ligue 1<br>
+ </fieldset><br>
+       <button name="submit" value="Login">SIGNUP</button><br><br>
+       <input type="reset">
+   </center>
+</body>
+</html>
